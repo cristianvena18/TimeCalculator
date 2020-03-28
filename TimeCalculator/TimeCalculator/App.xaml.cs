@@ -13,7 +13,7 @@ namespace TimeCalculator
         {
             InitializeComponent();
 
-            //DependencyService.Register<MockDataStore>();
+            DependencyService.Register<CalculatorService>();
             MainPage = new MainPage();
         }
 

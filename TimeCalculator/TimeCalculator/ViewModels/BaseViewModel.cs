@@ -7,12 +7,14 @@ using Xamarin.Forms;
 
 using TimeCalculator.Models;
 using TimeCalculator.Services;
+using TimeCalculator.Interfaces;
 
 namespace TimeCalculator.ViewModels
 {
     public class BaseViewModel : INotifyPropertyChanged
     {
         //public IDataStore<Item> DataStore => DependencyService.Get<IDataStore<Item>>();
+        public ICalculatorService CalculatorService => DependencyService.Get<ICalculatorService>();
 
         bool isBusy = false;
         public bool IsBusy
