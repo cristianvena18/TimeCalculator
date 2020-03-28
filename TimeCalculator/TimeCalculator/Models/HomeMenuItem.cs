@@ -6,7 +6,7 @@ namespace TimeCalculator.Models
 {
     public enum MenuItemType
     {
-        Browse,
+        HourCalculator,
         About
     }
     public class HomeMenuItem
